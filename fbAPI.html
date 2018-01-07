@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Facebook API</title>
+    <link href="CSS/fbAPI.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <p><a href="index.html">Back to first page</a></p>
+    <div class="panelHeader">
+        Facebook Login & Graph API with Javascript SDK
+    </div>
+
+    <div class="panelHolder">
+        <fb:login-button show-faces="true" width="200" max-rows="1" data-auto-logout-link="true" data-scope="publish_actions"></fb:login-button>
+    </div>
+    <div class="panelHolder">
+        <label class="lblHeader">ทดสอบ Post Status</label>
+        <label class="lblField">ข้อความ:</label>
+        <input type="text" id="postText" value="" />
+        <input type="button" id="postBtn" value="post" />
+        <input type="button" id="postDeleteBtn" value="delete post" />
+        <br />
+        <label class="lblField">Post id:</label>
+        <input type="text" id="lastPostId" value="" readonly="readonly" />
+    </div>
+    <div class="panelHolder">
+        <label class="lblHeader">ทดสอบ Comment ไปยัง Post-id: <label id='lblCmnToPostId'></label></label>
+        <label class="lblField">ข้อความ:</label>
+        <input type="text" id="commentText" value="" />
+        <input type="button" id="commentBtn" value="comment" />
+        <input type="button" id="commentUpdateBtn" value="update comment" />
+        <input type="button" id="commentDeleteBtn" value="delete comment" />
+        <br />
+        <label class="lblField">Comment id:</label>
+        <input type="text" id="lastCommentId" value="" readonly="readonly" />
+    </div>
+    <script src="JS/fbAPI.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Member Information</title>
+    <link href="CSS/form.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <p><a href="index.html">Back to first page</a></p>
+    <h1>Insert your information here.</h1>
+    <form>
+        <fieldset>
+            <legend>Member Information</legend>
+            <!--Input Type Text-->
+            <label for="membername">Name</label>
+            <input type="TEXT" name="membername" required autofocus>
+            <!--Input Type Number-->
+            <label for="memberage">Age</label>
+            <input type="number" name="memberage" min="13" max="40" step="1" value="13" required>
+            <!--Input Type Date-->
+            <label for="memberdateofbirth">Date of Birth</label>
+            <input type="date" name="memberdateofbirth" required>
+            <!--Input Type Email-->
+            <label for="memberemail">E-Mail</label>
+            <input type="email" name="memberemail" placeholder="example@gmail.com" required>
+            <!--Input Type Tel-->
+            <label for="membertel">Telephone Number</label>
+            <input type="tel" name="membertel" placeholder="08x-xxxxxxx" required>
+            <!--Input Type Url-->
+            <label for="memberurl">Link</label>
+            <input type="url" name="memberurl" placeholder="http://example.domain">
+            <!--Input Datalist-->
+            <label for="membercity">City</label>
+            <input type="text" name="membercity" list="city">
+            <datalist id="city"> <!--Datalist should have "id" attribute and assume them as value in
+                                  "list" attribute on input tag-->
+                <option label="Tokyo" value="Tokyo"></option>
+                <option label="Bangkok" value="Bangkok"></option>
+                <option label="Seoul" value="Seoul"></option>
+            </datalist>
+            <!--Input Type Password-->
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Filling your password" required>
+            <!--Input Type Radio-->
+            <label for="membergender">Gender</label>
+            <input type="radio" name="gender">Male
+            <br>
+            <input type="radio" name="gender">Female
+            <!--Input Type Checkbox-->
+            <label for="memberfavmovies">Favorite Movies Series</label>
+            <input type="checkbox" name="memberfavmovies" value="starwars">Star Wars<br>
+            <input type="checkbox" name="memberfavmovies" value="harrypotter">Harry Potter<br>
+            <input type="checkbox" name="memberfavmovies" value="jurassicpark">Jurassic Park<br>
+            <input type="checkbox" name="memberfavmovies" value="transformer">Transformer<br>
+            <input type="checkbox" name="memberfavmovies" value="mcu">Marvel Cinematic Universe<br>
+            <input type="checkbox" name="memberfavmovies" value="twilight">Twilight Saga
+            <!--Input Type Select Dropdown-->
+            <label for="memberincome">Income</label>
+            <select name="memberincome">
+                <option value="">Select your Income</option>
+                <option value="<1000">Less than $1000</option>
+                <option value="<5000">between $1000 - $5000</option>
+                <option value="<10000">between $5001 - $10000</option>
+                <option value=">10000">More than $10000</option>
+            </select>
+            <!--Input Type Range-->
+            <label for="alonelv">Alone Level</label>
+            <input type="range" name="alonelv" min="1" max="5">
+            <br><br>
+            <!--Input Type Submit-->
+            <input type="submit" value="Become a member">
+            <!--Input Type Reset-->
+            <input type="reset" value="Clear all information">
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-color: darkcyan;
+}
+
+.topichead {
+    font-size: 22px;
+    background-color: aquamarine;
+    width: 50px;
+}
+
+.hello {
+    background-color: aliceblue;
+}
+
+.search {
+    color: yellow;
+    background-color: red;
+}
+
+.whatever {
+    background-color: orange;
+}
+
+.you {
+    background-color: green;
+}
+
+.want {
+    color: yellow;
+    background-color: blue;
+}
+
+.topic {
+    background-color: yellowgreen;
+    width: 300px;
+}
+
+iframe {
+    width: 400px;
+    height: 250px;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.joy {
+    font-size: 22px;
+    background-color: darkorange;
+    width: 140px;
+}

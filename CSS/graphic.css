@@ -1,0 +1,20 @@
+body {
+    background-color: orange;
+}
+
+#vector {
+    margin: auto;
+    display: block;
+}
+
+svg {
+    margin: auto;
+    background-color: pink;
+    width: 630px;
+    height: 180px;
+}
+
+.iloveu {
+    font-size: 30px;
+    margin: auto;
+}
