@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#name {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  margin-left: 50%;
+}
+
