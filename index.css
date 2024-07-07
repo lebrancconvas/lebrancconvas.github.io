@@ -8,9 +8,17 @@
   display: flex;
   gap: 20px;
   position: absolute;
-  top: 50%;
   text-align: center;
-  margin-left: 50%;
+  top: 10%;
+  left: 43%;
+}
+
+#poom {
+  margin: 0 20px;
+}
+
+#yimyuean {
+  margin: 0 20px;
 }
 
 h1 {
